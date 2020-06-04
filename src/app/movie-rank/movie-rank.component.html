@@ -1,0 +1,25 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div *ngFor="let number of listMovie;  let i=index">
+<div *ngIf="i<3">  
+<div class="gallery-cate">
+    <div class="gallery">
+      <a target="_blank" href="./assets/img/home__bg.jpg">
+        <img src="./assets/merlin_172756800_e5db1e1e-d1d7-4e8b-8294-f91a09f21a68-superJumbo.jpg" alt="tranformer" width="600" height="400">
+      </a>
+      <div class="container">
+        <p class="gallery-title">{{number.title}}</p>
+        <div class="user-view">
+          <div class="gallery-user"><i>{{number.name}}</i></div>
+          <i class="eye fa fa-eye">{{number.count_view}}</i>
+        </div>
+        <div>
+          <span class="desc"></span>
+        </div>
+        <div>
+          <a href="#" class="details">Chi tiết</a>
+        </div>
+      </div>   
+    </div>  
+</div>      
+    

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
+
+    <title>Album example for Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="../../dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="app.component.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <div class="topnav">
+        <ul>
+          <li><a href="#home">Simple Team</a></li>
+          <div class="search-container">
+            <form action="">
+              <input type="text" placeholder="Username" name="username">
+              <input type="text" placeholder="Password" name="psw">
+              <button type="submit">Login</button>
+            </form>
+          </div>
+          <div class="login-container">
+            <form action="">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </ul>
+        </div>
+    </header>
+
+    <main role="main">
+          <h1 style="text-align: center; margin: auto;" >Review Movies</h1>
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="left" style="width:70%">
+              <div class="ranks" style="width:30%">
+                <div class="card  shadow-sm">
+                  <img class="card-img-top"  src="assets/merlin_172756800_e5db1e1e-d1d7-4e8b-8294-f91a09f21a68-superJumbo.jpg" alt="Card image cap">
+                  <div class="title" style="padding: 10px; font-weight: bold;">AHIHI DO NGOC</div>
+                  <div class="divok" >
+                    <div class="gallery-user"><i>tên</i></div>
+                    <i class="eye fa fa-eye">view</i>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" routerLink="/detail">View</button>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          <div class="right sidebar" style="width:30%">
+            <app-movie-rank></app-movie-rank>
+          </div>
+         </div>
+          <div>
+        </div>
+      </div>
+      </div>
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+        <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+  </body>
+</html>
