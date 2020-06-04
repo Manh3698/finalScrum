@@ -7,6 +7,8 @@ import { MovieRankComponent } from './movie-rank/movie-rank.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { DetailComponent } from './detail/detail.component';
 import { PostComponent } from './post/post.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { PostComponent } from './post/post.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+     FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
