@@ -17,21 +17,21 @@ export class PostComponent implements OnInit {
     description : new FormControl(''),
     image : new FormControl(''),
     content : new FormControl(''),
-    name : new FormControl('')
+    user_id : new FormControl('1')
   });
   constructor(private postService: PostService) { }
 
   ngOnInit(): void {
-    this.postService.getUser(name).subscribe((data : any)=>{
-      console.log(name);
-    })
+    // this.postService.getUser(name).subscribe((data : any)=>{
+    //   console.log(name);
+    // })
   }
   onSubmit(){
     this.postService.addPost(this.addPostForm.value).subscribe(
       (data: any) => {
-        if (data && data.status === 200){
+        //if (data && data.status === 200){
           console.log(this.addPostForm.value);         
-        }
+        //}
       })
   }
 

@@ -168,3 +168,17 @@ li a:hover:not(.active) {
   text-align: center;
   margin-right: auto;
 } */
+div.user-view{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-top: 3px;
+}

@@ -8,6 +8,8 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { DetailComponent } from './detail/detail.component';
 import { PostComponent } from './post/post.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AuthenComponent } from './authen/authen.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     MovieRankComponent,
     DetailComponent,
-    PostComponent
+    PostComponent,
+    AuthenComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
