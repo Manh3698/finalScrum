@@ -11,10 +11,10 @@ export class PostService {
   constructor(private httpClient : HttpClient) { }
 
   public addPost(data: any){
-    return this.httpClient.post(`http://localhost:8000/api/posts`, data)
+    return this.httpClient.post(`http://192.168.43.79:8000/api/posts`, data)
   }
   getUser(data:any): Observable<any> {
-    return this.httpClient.post<any>('http://localhost:8000/api/auth/login', data );
+    return this.httpClient.post<any>('http://192.168.43.79:8000/api/auth/login', data );
   }
 
 }

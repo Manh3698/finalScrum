@@ -10,6 +10,7 @@ import { PostComponent } from './post/post.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthenComponent } from './authen/authen.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { HomepageLoginComponent } from './homepage-login/homepage-login.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { HomepageComponent } from './homepage/homepage.component';
     DetailComponent,
     PostComponent,
     AuthenComponent,
-    HomepageComponent
+    HomepageComponent,
+    HomepageLoginComponent
   ],
   imports: [
     BrowserModule,

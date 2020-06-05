@@ -4,6 +4,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
+
 @Component({
   selector: 'app-post',
   templateUrl: './post.component.html',
@@ -12,6 +13,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 export class PostComponent implements OnInit {
   getUser;
   addPost;
+  id;
   addPostForm = new FormGroup ({
     title : new FormControl(''),
     description : new FormControl(''),
@@ -25,6 +27,9 @@ export class PostComponent implements OnInit {
     // this.postService.getUser(name).subscribe((data : any)=>{
     //   console.log(name);
     // })
+    this.id = localStorage.getItem('id');
+    console.log(this.id);
+    
   }
   onSubmit(){
     this.postService.addPost(this.addPostForm.value).subscribe(
@@ -33,6 +38,8 @@ export class PostComponent implements OnInit {
           console.log(this.addPostForm.value);         
         //}
       })
-  }
+      
+  };
+  
 
 }

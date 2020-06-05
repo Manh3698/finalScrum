@@ -9,7 +9,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 })
 export class AuthenComponent implements OnInit {
   checkUser;
-  Login = new FormGroup({
+  LoginForm = new FormGroup({
     email : new FormControl(''),
     password : new FormControl('')
   })
@@ -18,11 +18,12 @@ export class AuthenComponent implements OnInit {
   ngOnInit(): void {
   }
   onSubmit(){
-  this.authenService.checkUser(this.Login.value).subscribe((data : any)=>{
+  this.authenService.checkUser(this.LoginForm.value).subscribe((data : any)=>{
     
-    console.log(data);
-    localStorage.setItem('',data.name);
-    
+    console.log("ff"+data.user[0].id);
+    //localStorage.setItem('name',data.name);
+    localStorage.setItem('id',data.user[0].id);
+    localStorage.setItem('name',data.user[0].name);
   })
   }
 }

@@ -1,4 +1,4 @@
-<div class="info">
+<!-- <div class="info">
     <div></div>
     <div></div>
 </div>
@@ -9,4 +9,27 @@
     <p>{{dpost.title}}</p>
 <img src="{{dpost.image}}" alt="">
     <p>{{dpost.content}}</p>
+</div> -->
+<div *ngFor="let dpost of detailPost">
+    <div style="display: flex; justify-content:center; background-color: #f9fbfd;">
+        <div style="width:60%; background-color: white; padding-bottom: 40px; padding-top: 10px; ">
+          <div style="display: flex; ">
+            <div style="width:30%">
+              <img src="{{dpost.image}}" style="width:100%" alt="">
+            </div>
+            <div style="flex-direction: column;">
+              <div style="margin-left: 30px; font-weight: bold; font-size: 25px; padding-top: 5px">{{dpost.title}}</div>
+              <div style="margin-left: 30px; padding-top: 5px;padding-left: 10px;">{{dpost.name}}</div>
+              <div style="margin-left: 30px; padding-top: 5px;padding-left: 10px;"> View: {{dpost.count_view}}</div>
+              <div style="margin-left: 30px; padding-top: 5px;padding-left: 10px;"> Description: {{dpost.description}}</div>
+            </div>
+        </div>
+      </div>
+      
+    </div>
+    <div style="display: flex; justify-content: center; background-color: #f9fbfd;">
+    <div style="width:60%;  background-color: white;">
+        {{dpost.content}}
+    </div>
+    </div>
 </div>

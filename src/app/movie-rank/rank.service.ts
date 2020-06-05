@@ -9,7 +9,7 @@ export class RankService {
   constructor(private httpClient: HttpClient) { }
 
   public listMovie(){
-    return this.httpClient.get('http://localhost:8000/api/ranks');
+    return this.httpClient.get('http://192.168.43.79:8000/api/ranks');
   }
 }
 
