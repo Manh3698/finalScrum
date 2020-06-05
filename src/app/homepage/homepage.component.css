@@ -182,3 +182,10 @@ div.user-view{
   -moz-osx-font-smoothing: grayscale;
   padding-top: 3px;
 }
+element.style {
+  /* display: flex; */
+  height: 1300px;
+}
+.album{
+  height:1000px
+}

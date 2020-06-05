@@ -13,9 +13,7 @@ export class PostService {
   public addPost(data: any){
     return this.httpClient.post(`http://192.168.43.79:8000/api/posts`, data)
   }
-  getUser(data:any): Observable<any> {
-    return this.httpClient.post<any>('http://192.168.43.79:8000/api/auth/login', data );
-  }
+  
 
 }
 // export interface UserInterface {

@@ -34,9 +34,8 @@ export class PostComponent implements OnInit {
   onSubmit(){
     this.postService.addPost(this.addPostForm.value).subscribe(
       (data: any) => {
-        //if (data && data.status === 200){
-          console.log(this.addPostForm.value);         
-        //}
+          console.log(this.addPostForm.value); 
+          alert('add success');        
       })
       
   };
